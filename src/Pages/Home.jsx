@@ -89,15 +89,15 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col">
             {/* Banner Section */}
-            <section className="relative w-full h-[500px] bg-gradient-to-r from-pink-100 to-purple-100">
-                <div className="container relative z-10 h-full flex flex-col justify-center items-start px-4 md:px-6">
+            <section className="relative  flex flex-col-reverse  md:flex-row items-center lg:py-12 w-full  bg-gradient-to-r from-pink-100 to-purple-100 overflow-hidden">
+                <div className="container max-md:text-center  lg:w-[80%] relative z-10 h-full flex flex-col justify-center items-start max-md:items-center px-4 md:px-6">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-800 mb-4">
-                        Compassionate Women's Healthcare
+                        The Modern and Ayurveda Way
                     </h1>
-                    <p className="text-lg md:text-xl text-pink-700 max-w-xl mb-8">
+                    <p className="text-lg md:text-xl text-pink-700 max-w-xl my-2 lg:mb-8">
                         Dedicated to providing exceptional care for women at every stage of life
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-row gap-4 max-lg:my-4">
                         <Link
                             to="/services"
                             className="inline-flex h-12 items-center justify-center rounded-md bg-pink-600 px-6 text-base font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
@@ -112,7 +112,10 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-                <div className="absolute inset-0 bg-[url('/images/banner-bg.jpg')] bg-cover bg-center opacity-20"></div>
+
+                <div className="max-md:px-4 max-md:py-2  ">
+                    <img className=" lg:scale-123" src="/img/banner.png" alt="" />
+                </div>
             </section>
 
             {/* Call Now CTA */}
