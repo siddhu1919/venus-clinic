@@ -4,7 +4,7 @@ import { PhoneCall, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lu
 export default function Footer() {
   return (
     <footer className="w-full bg-pink-800 text-white">
-      <div className="container px-4 md:px-6 py-12">
+      <div className="px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-bold mb-4">VENUS
