@@ -7,7 +7,7 @@ export default function Services() {
         <main className="flex min-h-screen flex-col">
             {/* Services Banner */}
             <section className="w-full py-16 bg-gradient-to-r from-pink-100 to-purple-100">
-                <div className="container px-4 md:px-6 text-center">
+                <div className="px-4 md:px-6 text-center">
                     <h1 className="text-4xl font-bold text-pink-800 mb-4">Our Services</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         Comprehensive women's healthcare services tailored to your unique needs at every stage of life
@@ -17,7 +17,7 @@ export default function Services() {
 
             {/* Services Content */}
             <section className="w-full py-16">
-                <div className="container px-4 md:px-6">
+                <div className="px-4 md:px-6">
                     <CustomTabs />
 
                     <div className="mt-12 bg-pink-50 p-6 rounded-lg">
@@ -40,7 +40,7 @@ export default function Services() {
 
             {/* Full Services List */}
             <section className="w-full py-16 bg-white border-t border-gray-400">
-                <div className="container px-4 md:px-6">
+                <div className="px-4 md:px-6">
                     <h2 className="text-3xl font-bold text-pink-800 mb-8 text-center">Complete Services Directory</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
