@@ -90,7 +90,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col">
             {/* Banner Section */}
             <section className="relative  flex flex-col-reverse  md:flex-row items-center lg:py-12 w-full  bg-gradient-to-r from-pink-100 to-purple-100 overflow-hidden">
-                <div className="container max-md:text-center  lg:w-[80%] relative z-10 h-full flex flex-col justify-center items-start max-md:items-center px-4 md:px-6">
+                <div className="max-md:text-center  lg:w-[80%] relative z-10 h-full flex flex-col justify-center items-start max-md:items-center px-4 md:px-6">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pink-800 mb-4">
                         The Modern and Ayurveda Way
                     </h1>
@@ -120,7 +120,7 @@ export default function Home() {
 
             {/* Call Now CTA */}
             <section className="w-full py-8 bg-pink-600">
-                <div className="container flex flex-col md:flex-row justify-between items-center px-4 md:px-6">
+                <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-6">
                     <div className="text-white mb-4 md:mb-0">
                         <h2 className="text-2xl font-bold">Need immediate assistance?</h2>
                         <p className="text-pink-100">Our healthcare professionals are ready to help</p>
@@ -137,7 +137,7 @@ export default function Home() {
 
             {/* Services Overview Section */}
             <section className="w-full py-16 bg-white">
-                <div className="container px-4 md:px-6">
+                <div className="px-4 md:px-6">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-pink-800 mb-4">Our Services</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
@@ -172,7 +172,7 @@ export default function Home() {
 
             {/* Testimonials Section */}
             <section className="w-full py-16 bg-pink-50">
-                <div className="container px-4 md:px-6">
+                <div className="px-4 md:px-6">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-pink-800 mb-4">Patient Testimonials</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
@@ -186,7 +186,7 @@ export default function Home() {
 
             {/* Quick Contact Section */}
             <section className="w-full py-16 bg-gradient-to-r from-purple-100 to-pink-100">
-                <div className="container px-4 md:px-6">
+                <div className="px-4 md:px-6">
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-pink-800 mb-4">Schedule Your Appointment</h2>
                         <p className="text-gray-600 mb-8">
