@@ -37,7 +37,7 @@ export default function Header() {
             <div className="w-full flex h-20 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center gap-2">
                     <Link to="/" className="flex items-center">
-                        <div className="size-15 rounded-full  flex items-center justify-center mr-2">
+                        <div className="size-11 md:size-15 rounded-full  flex items-center justify-center mr-2">
                             <img src="/img/favicon.png" alt="VenusLogo" />
                         </div>
                         <span className="text-xl font-bold text-pink-800">Women's Wellness Clinic</span>
