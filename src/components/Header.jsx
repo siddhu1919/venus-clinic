@@ -32,7 +32,7 @@ export default function Header() {
     ]
 
     return (
-        <header className={`sticky top-0 z-50 w-full border-b-2   overflow-hidden border-gray-200 bg-white/50 backdrop-blur-[15px] ${isMenuOpen ? "rounded-b-3xl" : ''
+        <header className={`sticky top-0 z-50 w-full  overflow-hidden  bg-white/50 backdrop-blur-[15px] ${isMenuOpen ? "rounded-b-3xl" : ''
             } `}>
             <div className="w-full flex h-20 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center gap-2">
