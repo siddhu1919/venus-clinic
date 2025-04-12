@@ -1,33 +1,70 @@
 import { Link } from "react-router-dom"
 import { PhoneCall, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react"
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-pink-800 text-white">
-      <div className="px-4 md:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+    <motion.footer
+      className="w-full bg-pink-800 text-white"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="px-4 md:px-6 py-12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+      >
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          <motion.div>
             <h3 className="text-lg font-bold mb-4">VENUS
               WOMEN'S WELLNESS CLINIC
             </h3>
             <p className="text-pink-100 mb-4">
               Dedicated to providing exceptional and compassionate healthcare for women at every stage of life.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-pink-100 hover:text-white">
+            <motion.div
+              className="flex space-x-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+            >
+              <motion.a
+                href="#"
+                className="text-pink-100 hover:text-white"
+                whileHover={{ scale: 1.1, rotate: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="text-pink-100 hover:text-white">
+              </motion.a>
+              <motion.a
+                href="#"
+                className="text-pink-100 hover:text-white"
+                whileHover={{ scale: 1.1, rotate: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </a>
-              <a href="#" className="text-pink-100 hover:text-white">
+              </motion.a>
+              <motion.a
+                href="#"
+                className="text-pink-100 hover:text-white"
+                whileHover={{ scale: 1.1, rotate: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
-              </a>
-            </div>
-          </div>
+              </motion.a>
+            </motion.div>
+          </motion.div>
 
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
@@ -50,11 +87,6 @@ export default function Footer() {
               <li>
                 <Link to="/contact" className="text-pink-100 hover:text-white">
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/privacy" className="text-pink-100 hover:text-white">
-                  Privacy Policy
                 </Link>
               </li>
             </ul>
@@ -156,13 +188,18 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="border-t border-pink-700 mt-8 pt-8 text-center text-pink-100">
+        <motion.div
+          className="border-t border-pink-700 mt-8 pt-8 text-center text-pink-100"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+        >
           <p>&copy; {new Date().getFullYear()} Women's Wellness Clinic. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+        </motion.div>
+      </motion.div>
+    </motion.footer >
   )
 }
 
