@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion"
 
 export default function CustomTabs() {
     const [activeTab, setActiveTab] = useState("adolescent")
@@ -228,18 +230,24 @@ export default function CustomTabs() {
             >
                 <div className="flex whitespace-nowrap">
                     {tabs.map((tab) => (
-                        <button
+                        <motion.button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`cursor-grab active:cursor-grabbing py-3 px-4 text-sm font-medium ${activeTab === tab.id ? "bg-pink-600 text-white" : "bg-white text-gray-600 hover:bg-pink-50"
                                 }`}
+
                         >
                             {tab.label}
-                        </button>
+                        </motion.button>
                     ))}
                 </div>
             </div>
-            <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+            <motion.div
+                className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+            >
                 <div className="p-5 border-b border-gray-300">
                     <h2 className="text-2xl text-pink-800  font-bold">{tabContent[activeTab].title}</h2>
                     <p className="text-gray-500">{tabContent[activeTab].subtitle}</p>
@@ -253,7 +261,7 @@ export default function CustomTabs() {
                         ))}
                     </ul>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
