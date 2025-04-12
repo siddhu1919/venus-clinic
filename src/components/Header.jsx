@@ -70,8 +70,14 @@ export default function Header() {
                         (123) 456-7890
                     </a>
                     <Link
-                        to="/contact"
+                        to="/contact#appointment-form"
                         className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 text-lg font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
+                        onClick={() => {
+                            setTimeout(() => {
+                                const form = document.getElementById('appointment-form');
+                                if (form) form.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                        }}
                     >
                         Book Appointment
                     </Link>
@@ -112,8 +118,14 @@ export default function Header() {
                                 (123) 456-7890
                             </a>
                             <Link
-                                to="/contact"
-                                onClick={() => setIsMenuOpen(false)}
+                                to="/contact#appointment-form"
+                                onClick={() => {
+                                    setIsMenuOpen(false);
+                                    setTimeout(() => {
+                                        const form = document.getElementById('appointment-form');
+                                        if (form) form.scrollIntoView({ behavior: 'smooth' });
+                                    }, 100);
+                                }}
                                 className="inline-flex h-10 items-center justify-center rounded-md bg-pink-600 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 w-full"
                             >
                                 Book Appointment

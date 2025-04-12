@@ -1,11 +1,40 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Award, Stethoscope, Users } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { MapPin, Phone, Mail, Clock, Award, Stethoscope, Users, Pill, Syringe, HeartPulse, Microscope } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+const FloatingIcon = ({ icon: Icon, delay, x, y }) => {
+    const floatAnimation = {
+        y: [y, y - 15, y],
+        x: [x, x + 10, x],
+        transition: {
+            duration: 3,
+            repeat: Infinity,
+            delay,
+            ease: "easeInOut"
+        }
+    };
+    return (
+        <motion.div
+            className="absolute text-pink-100/20"
+            style={{ left: x, top: y }}
+            animate={floatAnimation}
+        >
+            <Icon size={32} />
+        </motion.div>
+    );
+};
 
 const About = () => {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white relative overflow-hidden">
+            {/* Floating Medical Icons */}
+            <FloatingIcon icon={Stethoscope} delay={0} x={50} y={100} />
+            <FloatingIcon icon={Pill} delay={0.5} x={200} y={300} />
+            <FloatingIcon icon={Syringe} delay={1} x={800} y={200} />
+            <FloatingIcon icon={Stethoscope} delay={1.5} x={600} y={400} />
+            <FloatingIcon icon={HeartPulse} delay={2} x={100} y={500} />
+            <FloatingIcon icon={Microscope} delay={2.5} x={700} y={150} />
             {/* Hero Section */}
             <div className="relative bg-gradient-to-br from-pink-50 to-white py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/img/pattern.svg')] opacity-10"></div>
@@ -18,7 +47,7 @@ const About = () => {
                         <h1 className="text-6xl font-bold text-pink-800 mb-6">Dr. Madhavi Tayade</h1>
                         <p className="text-2xl text-gray-700 mb-4 font-medium">Consultant Gynaecologist and Obstetrician</p>
                         <p className="text-xl text-gray-600 mb-8">Combining modern medicine with traditional wisdom for holistic women's healthcare</p>
-                       
+
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
