@@ -44,10 +44,10 @@ export default function Contact() {
 
         setIsSubmitting(true);
         try {
-            const response = await fetch('YOUR_GOOGLE_SHEETS_WEB_APP_URL', {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbyqpdd24I2fsk9R24pZrZH4b4TkjkRLQI9A0swv1lfcE-cvtlsUOnjFgZx_2QGyRW3Guw/exec', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: JSON.stringify(formData)
             });
@@ -70,6 +70,9 @@ export default function Contact() {
             setSubmitStatus('error');
         } finally {
             setIsSubmitting(false);
+            setTimeout(() => {
+                setSubmitStatus(null);
+            }, 8000);
         }
     };
 
@@ -95,7 +98,7 @@ export default function Contact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
-                className="relative bg-gradient-to-br from-pink-50 to-white py-24 overflow-hidden border-b border-pink-100"
+                className="relative bg-gradient-to-br from-pink-50 to-white py-24 overflow-hidden border-b border-pink-200"
             >
                 <div className="absolute inset-0 bg-[url('/img/pattern.svg')] opacity-10"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -119,7 +122,7 @@ export default function Contact() {
             </motion.div>
 
             {/* Contact Information */}
-            <div className="py-16 bg-gradient-to-br from-white to-pink-50 border-b border-pink-100">
+            <div className="py-16 bg-gradient-to-br from-white to-pink-50 border-b border-pink-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <motion.div
@@ -127,7 +130,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-100"
+                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-200"
                         >
                             <div className="flex items-center mb-6">
                                 <div className="p-3 bg-pink-100 rounded-lg">
@@ -143,7 +146,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.1 }}
                             viewport={{ once: true }}
-                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-100"
+                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-200"
                         >
                             <div className="flex items-center mb-6">
                                 <div className="p-3 bg-pink-100 rounded-lg">
@@ -160,7 +163,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-100"
+                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-200"
                         >
                             <div className="flex items-center mb-6">
                                 <div className="p-3 bg-pink-100 rounded-lg">
@@ -177,7 +180,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                             viewport={{ once: true }}
-                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-100"
+                            className="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-pink-200"
                         >
                             <div className="flex items-center mb-6">
                                 <div className="p-3 bg-pink-100 rounded-lg">
@@ -197,7 +200,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form Section */}
-            <div className="py-16 bg-gradient-to-br from-pink-50 to-white border-t border-b border-pink-100">
+            <div className="py-16 bg-gradient-to-br from-pink-50 to-white border-t border-b border-pink-200">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         id="appointment-form"
@@ -205,7 +208,7 @@ export default function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-white p-10 rounded-2xl shadow-xl border-2 border-pink-100"
+                        className="bg-white p-10 rounded-2xl shadow-xl border-2 border-pink-200"
                     >
                         <h2 className="text-3xl font-bold text-pink-800 mb-8 text-center">Book an Appointment</h2>
                         <p className="text-gray-600 text-center mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
@@ -315,7 +318,7 @@ export default function Contact() {
                                 <motion.div
                                     initial={{ opacity: 0, y: -10 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    className="p-4 bg-green-50 border border-green-200 rounded-lg mt-4"
+                                    className="p-4 bg-green-50 border border-green-300 rounded-lg mt-4"
                                 >
                                     <p className="text-green-800 text-center">Thank you for your message! We'll get back to you soon.</p>
                                 </motion.div>
@@ -336,14 +339,14 @@ export default function Contact() {
             </div>
 
             {/* Map Section */}
-            <div className="py-16 bg-white border-t border-pink-100">
+            <div className="py-16 bg-white border-t border-pink-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="rounded-2xl overflow-hidden shadow-xl border border-pink-100"
+                        className="rounded-2xl overflow-hidden shadow-xl border border-pink-200"
                     >
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1055887893257!2d79.08570631493583!3d21.146017985934275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45cd5a726b5f0f8b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1625147433297!5m2!1sen!2sin"
