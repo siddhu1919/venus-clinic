@@ -64,6 +64,28 @@ const About = () => {
                 </div>
             </div>
 
+            {/* About Section */}
+            <div className="py-10 bg-gradient-to-b from-white to-pink-50/30">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="max-w-3xl mx-auto text-center">
+                        <h2 className="text-4xl font-bold text-pink-800 mb-8">About Dr. Madhavi Tayade</h2>
+                        <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+                            Dr. Madhavi Tayade is a skilled and compassionate healthcare professional with over 9 years of experience in the field of women's health. She offers a unique blend of modern medical practices and Ayurvedic healing, providing comprehensive care for her patients. With additional diplomas in Garbhasanskar, Nadi Parikshan, and Infertility Management, she brings a truly integrative approach to women's healthcare.
+                        </p>
+                        <p className="text-gray-600 leading-relaxed mb-8 text-lg">
+                            Throughout her career, she has successfully conducted and assisted in numerous gynecological surgeries and managed more than 500 normal deliveries. Her approach focuses not only on treating illness but also on achieving overall well-being—helping patients maintain balance in their physical, emotional, and mental health.
+                        </p>
+                        <p className="text-gray-600 leading-relaxed text-lg">
+                            By combining the precision of modern medicine with the depth of Ayurveda, she has consistently enhanced the quality of life and long-term health outcomes for her patients.
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
             {/* Stats Section */}
             <div className="py-16 bg-gradient-to-br from-pink-50 to-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,7 +149,7 @@ const About = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-100">
+                            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="bg-pink-100 p-3 rounded-lg">
                                     <Award className="w-8 h-8 text-pink-600" />
@@ -159,7 +181,7 @@ const About = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-100">
+                            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-pink-200">
                             <div className="flex items-center gap-4 mb-6">
                                 <div className="bg-pink-100 p-3 rounded-lg">
                                     <Stethoscope className="w-8 h-8 text-pink-600" />
@@ -192,7 +214,7 @@ const About = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-xl shadow-lg border border-pink-100">
+                        className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-xl shadow-lg border border-pink-200">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="bg-pink-100 p-3 rounded-lg">
                                 <Users className="w-8 h-8 text-pink-600" />
@@ -213,26 +235,6 @@ const About = () => {
                                 <p className="text-gray-600">24/7 emergency assistance and regular follow-up care</p>
                             </div>
                         </div>
-                    </motion.div>
-                </div>
-            </div>
-
-            {/* About Section */}
-            <div className="py-20 bg-gradient-to-b from-white to-pink-50/30">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                        className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-4xl font-bold text-pink-800 mb-8">About Dr. Madhavi Tayade</h2>
-                        <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-                            Dr. Madhavi Tayade is a skilled and compassionate healthcare professional with over 9 years of experience in the field of women's health. She offers a unique blend of modern medical practices and Ayurvedic healing, providing comprehensive care for her patients. Her approach focuses not only on treating illness but also on achieving overall well-being—helping patients maintain balance in their physical, emotional, and mental health.
-                        </p>
-                        <p className="text-gray-600 leading-relaxed text-lg">
-                            By combining the precision of modern medicine with the depth of Ayurveda, she has consistently enhanced the quality of life and long-term health outcomes for her patients. Her extensive experience at reputed hospitals such as Birla Hospital, Jupiter Hospital, ONP Leela, and Medipoint Hospital has equipped her with diverse expertise in handling various gynecological and obstetric cases.
-                        </p>
                     </motion.div>
                 </div>
             </div>
@@ -268,7 +270,7 @@ const About = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="space-y-8 p-6 bg-pink-50/30 rounded-xl border border-pink-100/50">
+                            className="space-y-8 p-6 bg-pink-50/30 rounded-xl border border-pink-200/50">
                             <div className="flex items-start space-x-4">
                                 <MapPin className="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" />
                                 <div>
