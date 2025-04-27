@@ -49,17 +49,17 @@ export default function Services() {
                         </div>
                     </motion.div>
                 </div>
-            </motion.section>0
+            </motion.section>
 
             {/* Full Services List */}
-            <motion.section 
-                className="w-full py-16 bg-white border-t border-gray-400"
+            <motion.section
+                className="w-full py-16 bg-white border-t border-pink-400"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
                 <div className="px-4 md:px-6">
-                    <motion.h2 
+                    <motion.h2
                         className="text-3xl font-bold text-pink-800 mb-8 text-center"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -107,9 +107,9 @@ export default function Services() {
                                 items: ["Preventive healthcare", "Nutritional counseling", "Holistic wellness"]
                             }
                         ].map((service, index) => (
-                            <motion.div 
+                            <motion.div
                                 key={service.title}
-                                className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+                                className="bg-white rounded-lg border border-pink-300 shadow-sm overflow-hidden"
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -121,7 +121,7 @@ export default function Services() {
                                 <div className="p-5">
                                     <ul className="list-disc pl-5 space-y-1">
                                         {service.items.map((item, i) => (
-                                            <motion.li 
+                                            <motion.li
                                                 key={i}
                                                 initial={{ opacity: 0, x: -20 }}
                                                 animate={{ opacity: 1, x: 0 }}
