@@ -96,68 +96,43 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services#AdolescentProblems" className="text-pink-100 hover:text-white">
+                <Link to="/services#adolescent" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Adolescent Problems
                 </Link>
               </li>
               <li>
-                <Link to="/services#PCOD" className="text-pink-100 hover:text-white">
+                <Link to="/services#pcod" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   PCOD
                 </Link>
               </li>
               <li>
-                <Link to="/services#MenstrualAbnormalities" className="text-pink-100 hover:text-white">
+                <Link to="/services#menstrual" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Menstrual Abnormalities
                 </Link>
               </li>
               <li>
-                <Link to="/services#InfertilityTreatment" className="text-pink-100 hover:text-white">
+                <Link to="/services#infertility" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Infertility Treatment
                 </Link>
               </li>
               <li>
-                <Link to="/services#Beejasanskar" className="text-pink-100 hover:text-white">
+                <Link to="/services#beejasanskar" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Beejasanskar
                 </Link>
               </li>
               <li>
-                <Link to="/services#PreconceptionalCounselling" className="text-pink-100 hover:text-white">
-                  Preconceptional Counselling
+                <Link to="/services#contraception" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                  Contraception / Family Planning
                 </Link>
               </li>
               <li>
-                <Link to="/services#AntinetalCare" className="text-pink-100 hover:text-white">
+                <Link to="/services#antenatal" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   Antinetal Care and Treatment
                 </Link>
               </li>
               <li>
-                <Link to="/services#Garbhasanskar" className="text-pink-100 hover:text-white">
-                  Garbhasanskar
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#HighRiskPregnancy" className="text-pink-100 hover:text-white">
-                  High Risk Pregnancy
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#PainlessDelivery" className="text-pink-100 hover:text-white">
-                  Normal / Painless Delivery
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#PostDeliveryCounselling" className="text-pink-100 hover:text-white">
-                  Post Delivery Counselling
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#NLP" className="text-pink-100 hover:text-white">
-                  NLP
-                </Link>
-              </li>
-              <li>
-                <Link to="/services#CancerScreening" className="text-pink-100 hover:text-white">
-                  Cancer Screening
+                <Link to="/services#" className="text-pink-100 hover:text-white" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                  Other Services
                 </Link>
               </li>
             </ul>
