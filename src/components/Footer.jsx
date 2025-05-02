@@ -148,7 +148,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5" />
-                <span>info@venusclinic.com</span>
+                <span>pune@venuswomensclinic.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5" />
