@@ -186,24 +186,24 @@ const About = () => {
                                 <div className="bg-pink-100 p-3 rounded-lg">
                                     <Stethoscope className="w-8 h-8 text-pink-600" />
                                 </div>
-                                <h3 className="text-2xl font-semibold text-pink-800">Hospital Experience</h3>
+                                <h3 className="text-2xl font-semibold text-pink-800">Professional Experience</h3>
                             </div>
                             <ul className="space-y-4">
                                 <li className="flex items-start gap-3">
                                     <span className="w-2 h-2 bg-pink-600 rounded-full mt-2"></span>
-                                    <span className="text-gray-700">Senior Consultant at Birla Hospital (2018-Present)</span>
+                                    <span className="text-gray-700">Birla Hospital, Thergaon, Pune</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="w-2 h-2 bg-pink-600 rounded-full mt-2"></span>
-                                    <span className="text-gray-700">Lead Gynecologist at Jupiter Hospital (2015-2018)</span>
+                                    <span className="text-gray-700">Jupiter Hospital, Pune</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="w-2 h-2 bg-pink-600 rounded-full mt-2"></span>
-                                    <span className="text-gray-700">Specialist at ONP Leela Medical Center (2013-2015)</span>
+                                    <span className="text-gray-700">ONP(Oyster and pearl) Leela Hospital, Pune</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <span className="w-2 h-2 bg-pink-600 rounded-full mt-2"></span>
-                                    <span className="text-gray-700">Resident Doctor at Medipoint Hospital (2011-2013)</span>
+                                    <span className="text-gray-700">Sanjivani Medipoint Hospital, Pune</span>
                                 </li>
                             </ul>
                         </motion.div>
