@@ -143,7 +143,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <PhoneCall className="h-5 w-5 mr-2 mt-0.5" />
-                <span>(123) 456-7890</span>
+                <span>8999106755, 9970341287
+                </span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5" />
@@ -151,7 +152,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5" />
-                <span className="max-w-[230px]">Laxmi Polyclinic, Vishal Nagar, Pune, Maharashtra, Jagtap Dairy Road, Jagtap Dairy, Pune - 411027 (Pimple Nilakh)</span>
+                <span className="max-w-[230px]">Suyog Space, Shop no. 7, First floor, Chaudhari Pk Rd, Choudhary Park, Shankar Kalat Nagar, Wakad, Pimpri-Chinchwad, Maharashtra 411057</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5" />

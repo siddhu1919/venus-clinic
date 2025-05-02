@@ -38,13 +38,13 @@ export default function Services() {
                                 <p className="text-gray-600">Our team is ready to provide the care you deserve.</p>
                             </div>
                             <motion.a
-                                href="tel:+1234567890"
+                                href="tel:8999106755"
                                 className="inline-flex h-12 items-center justify-center rounded-md bg-pink-600 px-6 text-base font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <PhoneCall className="h-5 w-5 mr-2" />
-                                Call Now: (123) 456-7890
+                                Call Now: 8999106755
                             </motion.a>
                         </div>
                     </motion.div>

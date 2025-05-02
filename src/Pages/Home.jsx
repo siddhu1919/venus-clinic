@@ -183,11 +183,11 @@ export default function Home() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        href="tel:+1234567890"
+                        href="tel:8999106755"
                         className="inline-flex h-12 items-center justify-center rounded-md bg-white px-6 text-base font-medium text-pink-600 shadow-sm hover:bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                     >
                         <PhoneCall className="h-5 w-5 mr-2" />
-                        Call Now: (123) 456-7890
+                        Call Now: 8999106755
                     </motion.a>
                 </div>
             </motion.section>
@@ -365,11 +365,11 @@ export default function Home() {
                             <motion.a
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="tel:+1234567890"
+                                href="tel:8999106755"
                                 className="inline-flex h-12 items-center justify-center rounded-md bg-pink-600 px-6 text-base font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                             >
                                 <PhoneCall className="h-5 w-5 mr-2" />
-                                Call: (123) 456-7890
+                                Call: 8999106755
                             </motion.a>
                             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                                 <Link

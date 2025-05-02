@@ -256,7 +256,7 @@ const About = () => {
                             viewport={{ once: true }}
                             className="rounded-xl overflow-hidden shadow-2xl border border-gray-200">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1055887893257!2d79.08570631493583!3d21.146017985934275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45cd5a726b5f0f8b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1625147433297!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d472.0316931906725!2d73.75962510000002!3d18.605063400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDM2JzE4LjEiTiA3M8KwNDUnMzQuOSJF!5e0!3m2!1sen!2sin!4v1711639533044!5m2!1sen!2sin"
                                 width="100%"
                                 height="450"
                                 style={{ border: 0 }}
@@ -275,21 +275,21 @@ const About = () => {
                                 <MapPin className="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" />
                                 <div>
                                     <h3 className="font-semibold text-gray-900">Clinic Address</h3>
-                                    <p className="text-gray-600">123 Healthcare Avenue, Medical District, Nagpur, Maharashtra</p>
+                                    <p className="text-gray-600">Suyog Space, Shop no. 7, First floor, Chaudhari Pk Rd, Choudhary Park, Shankar Kalat Nagar, Wakad, Pimpri-Chinchwad, Maharashtra 411057</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
                                 <Phone className="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" />
                                 <div>
                                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                                    <p className="text-gray-600">+91 98765 43210</p>
+                                    <p className="text-gray-600">8999106755 , 9970341287</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
                                 <Mail className="w-6 h-6 text-pink-600 flex-shrink-0 mt-1" />
                                 <div>
                                     <h3 className="font-semibold text-gray-900">Email</h3>
-                                    <p className="text-gray-600">dr.madhavi@example.com</p>
+                                    <p className="text-gray-600">pune@venuswomensclinic.com</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">

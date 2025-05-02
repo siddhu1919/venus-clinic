@@ -138,7 +138,7 @@ export default function Contact() {
                                 </div>
                                 <h3 className="ml-4 text-xl font-semibold text-gray-900">Visit Us</h3>
                             </div>
-                            <p className="text-gray-600 text-lg">123 Healthcare Avenue, Medical District, Nagpur, Maharashtra</p>
+                            <p className="text-gray-600 text-lg">Suyog Space, Shop no. 7, First floor, Chaudhari Pk Rd, Choudhary Park, Shankar Kalat Nagar, Wakad, Pimpri-Chinchwad, Maharashtra 411057</p>
                         </motion.div>
 
                         <motion.div
@@ -154,7 +154,7 @@ export default function Contact() {
                                 </div>
                                 <h3 className="ml-4 text-xl font-semibold text-gray-900">Call Us</h3>
                             </div>
-                            <p className="text-gray-600 text-lg">+91 98765 43210</p>
+                            <p className="text-gray-600 text-lg">8999106755, 9970341287                          </p>
                             <p className="text-gray-500 mt-2">Available 24/7 for emergencies</p>
                         </motion.div>
 
@@ -171,7 +171,7 @@ export default function Contact() {
                                 </div>
                                 <h3 className="ml-4 text-xl font-semibold text-gray-900">Email Us</h3>
                             </div>
-                            <p className="text-gray-600 text-lg">dr.madhavi@example.com</p>
+                            <p className="text-gray-600 text-lg break-words">pune@venuswomensclinic.com</p>
                             <p className="text-gray-500 mt-2">We'll respond within 24 hours</p>
                         </motion.div>
 
@@ -191,8 +191,10 @@ export default function Contact() {
                             <div className="space-y-2">
                                 <p className="text-gray-600 text-lg">Monday - Saturday:</p>
                                 <p className="text-gray-600 font-medium">9:00 AM - 7:00 PM</p>
-                                <p className="text-gray-600 text-lg mt-2">Sunday:</p>
-                                <p className="text-gray-600 font-medium">Closed</p>
+                                <p className="text-gray-600 text-lg mt-2">Sunday: 
+                                    <span className="text-gray-600 font-medium"> Closed</span>
+
+                                </p>
                             </div>
                         </motion.div>
                     </div>
@@ -349,7 +351,7 @@ export default function Contact() {
                         className="rounded-2xl overflow-hidden shadow-xl border border-pink-200"
                     >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.1055887893257!2d79.08570631493583!3d21.146017985934275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45cd5a726b5f0f8b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1625147433297!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d472.0316931906725!2d73.75962510000002!3d18.605063400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDM2JzE4LjEiTiA3M8KwNDUnMzQuOSJF!5e0!3m2!1sen!2sin!4v1711639533044!5m2!1sen!2sin"
                             width="100%"
                             height="450"
                             style={{ border: 0 }}

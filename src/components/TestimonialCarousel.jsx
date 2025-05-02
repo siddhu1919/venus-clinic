@@ -6,33 +6,33 @@ import { motion, AnimatePresence } from "framer-motion"
 const testimonials = [
     {
         id: 1,
-        name: "Sarah M.",
-        text: "The care I received during my pregnancy was exceptional. The doctors and staff were attentive, compassionate, and made me feel comfortable throughout my journey.",
-        role: "New Mother",
+        name: "Ankita hans",
+        text: "Visited ma'am she is go nice genuine behavior happy to meet her for pcod the given so good treatment over all. A good plan for pcod i feel better now. Best clinic in vishal nagar pune. Thank you ma'am",
+        role: "Happy Patient",
     },
     {
         id: 2,
-        name: "Jennifer L.",
-        text: "After struggling with fertility issues for years, the team at Women's Wellness Clinic helped me achieve my dream of becoming a mother. Their expertise and support made all the difference.",
-        role: "Fertility Patient",
+        name: "Pratibha Dusane",
+        text: "I trust Dr. Madhavi Tayde with my cervical health. She checks everything carefully to keep me safe.and thats the great thing about her. And she is so friendly as well. Really nice to meet her. And best clinic in vishal nagar pimple nilakh. Pune Recommend to all! 😊",
+        role: "Happy Patient",
     },
     {
         id: 3,
-        name: "Rebecca T.",
-        text: "The adolescent care program provided my daughter with the guidance and support she needed during a challenging time. The doctors created a safe space for her to discuss her concerns.",
-        role: "Parent",
+        name: "Deepika Kanade",
+        text: "I had PCOD for that I visited Dr. Madhvi's clinic. She helped me not only for PCOD but also for weight loss with good guidelines. She is friendly and explained everything clearly and patiently to me . I would really recommend her to my family and friends👍",
+        role: "Happy Patient",
     },
     {
         id: 4,
-        name: "Michelle K.",
-        text: "I've been a patient for over 10 years, and the quality of care has always been outstanding. The doctors take the time to listen and address all my concerns.",
-        role: "Long-term Patient",
+        name: "Roshni Pamnani",
+        text: "I trust Dr. Madhavi Tayde with my cervical health. She checks everything carefully to keep me safe.and thats the great thing about her. And she is so friendly as well. Thankyou de madhavi",
+        role: "Happy Patient",
     },
     {
         id: 5,
-        name: "Patricia D.",
-        text: "The cancer screening program potentially saved my life. Early detection made all the difference, and I'm grateful for the thorough and compassionate care I received.",
-        role: "Cancer Screening Patient",
+        name: "Pritee Malvankar",
+        text: "I don't worry about peeing myself anymore, thanks to Dr. Madhavi Tayde. She found a way to help me feel normal again.i was suffering from my periods problems.She is so friendly",
+        role: "Happy Patient",
     },
 ]
 

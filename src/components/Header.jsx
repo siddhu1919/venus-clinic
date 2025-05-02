@@ -210,7 +210,7 @@ export default function Header() {
 
                 <div className="hidden lg:flex items-center gap-4">
                     <motion.a
-                        href="tel:+1234567890"
+                        href="tel:8999106755"
                         className="inline-flex h-9 items-center justify-center rounded-md border border-pink-600 bg-transparent px-4 text-lg font-medium text-pink-600 shadow-sm hover:bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
                         custom={0}
                         initial="hidden"
@@ -220,7 +220,7 @@ export default function Header() {
                         variants={buttonVariants}
                     >
                         <PhoneCall className="h-4 w-4 mr-2" />
-                        (123) 456-7890
+                        8999106755
                     </motion.a>
                     <motion.div
                         custom={1}
@@ -323,7 +323,7 @@ export default function Header() {
                                 variants={mobileNavItemVariants}
                             >
                                 <motion.a
-                                    href="tel:+1234567890"
+                                    href="tel:8999106755"
                                     className="inline-flex h-10 items-center justify-center rounded-md border border-pink-600 bg-transparent px-4 text-sm font-medium text-pink-600 shadow-sm hover:bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 w-full"
                                     custom={0}
                                     variants={mobileButtonVariants}
@@ -331,7 +331,7 @@ export default function Header() {
                                     whileTap={{ scale: 0.98 }}
                                 >
                                     <PhoneCall className="h-4 w-4 mr-2" />
-                                    (123) 456-7890
+                                    8999106755
                                 </motion.a>
                                 <motion.div
                                     custom={1}
