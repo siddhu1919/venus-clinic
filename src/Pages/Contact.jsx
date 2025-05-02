@@ -190,10 +190,10 @@ export default function Contact() {
                             </div>
                             <div className="space-y-2">
                                 <p className="text-gray-600 text-lg">Monday - Saturday:</p>
-                                <p className="text-gray-600 font-medium">9:00 AM - 7:00 PM</p>
+                                <p className="text-gray-600 font-medium">Morning: 10:00 AM - 2:00 PM</p>
+                                <p className="text-gray-600 font-medium">Evening: 5:00 PM - 9:00 PM</p>
                                 <p className="text-gray-600 text-lg mt-2">Sunday: 
                                     <span className="text-gray-600 font-medium"> Closed</span>
-
                                 </p>
                             </div>
                         </motion.div>

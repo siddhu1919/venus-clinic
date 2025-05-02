@@ -168,11 +168,11 @@ export default function Header() {
                             <img src="/img/favicon.png" alt="VenusLogo" />
                         </motion.div>
                         <motion.span
-                            className="text-xl font-bold text-pink-800"
+                            className="text-lg max-md:break-words md:text-xl font-bold text-pink-800 "
                             whileHover={{ scale: 1.02 }}
                             transition={{ duration: 0.2 }}
                         >
-                            Women's Wellness Clinic
+                            Venus Women's Wellness Clinic
                         </motion.span>
                     </Link>
                 </motion.div>

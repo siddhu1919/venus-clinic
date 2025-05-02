@@ -25,7 +25,7 @@ export default function Footer() {
         >
           <motion.div>
             <h3 className="text-lg font-bold mb-4">VENUS
-              WOMEN'S WELLNESS CLINIC
+              VENUS WOMEN'S WELLNESS CLINIC
             </h3>
             <p className="text-pink-100 mb-4">
               Dedicated to providing exceptional and compassionate healthcare for women at every stage of life.
@@ -157,8 +157,8 @@ export default function Footer() {
               <li className="flex items-start">
                 <Clock className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p>Mon-Fri: 10:00 AM - 1:00 PM</p>
-                  <p>Sat: 9:00 AM - 1:00 PM</p>
+                  <p>Morning: 10:00 AM - 2:00 PM</p>
+                  <p>Evening: 5:00 PM - 9:00 PM</p>
                   <p>Sun: Closed</p>
                 </div>
               </li>
